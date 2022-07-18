@@ -1,15 +1,11 @@
 #!/usr/bin/python3
-def safe_print_list(mylist=[], x=0):
-    try:
-        m = 0
-        for i in mylist:
-            m += 1
-        if x <= m:
-            print(x)
-        elif x >= m:
-            x = m
-            print(m)
-        for i in mylist:
-            print(i, end="")
-    except (ValueError, NameError):
-        print('no')
+def safe_print_list(my_list=[], x=0):
+    count = 0
+    for i in range(0, x):
+        try:
+            print("{:d}".format(my_list[i]), end="")
+            count += 1
+        except:
+            pass
+    print()
+    return count
