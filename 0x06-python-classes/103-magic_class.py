@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-"""Magic class from a given ByteCode."""
+"""
+A module for working with squares.
+agic class from a given ByteCode.
+"""
+
 import math
 
 
