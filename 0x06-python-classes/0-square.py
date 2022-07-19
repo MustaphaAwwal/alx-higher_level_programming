@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+"""
+A module for working with squares.
+"""
+
+
 class Square:
-    """Represents an empty square."""
+    """
+    This would represents a 2d poly 
+    with 4 equal and perpendicular sides.
+    """
     pass
