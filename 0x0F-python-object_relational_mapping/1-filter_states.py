@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Lists all states from from the database
+filter all states from the database
+with name starting from N
 """
 from sys import argv
 import MySQLdb
