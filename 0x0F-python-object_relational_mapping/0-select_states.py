@@ -10,19 +10,18 @@ Connection set up
 using MySQLdb
 """
 if __name__ == '__main__':
-    connection = MySQLdb.connect(
-            host="localhost",
+    connect = MySQLdb.connect(
+            host='localhost',
             port=3306, user=argv[1],
             passwd=argv[2],
             db=argv[3],
-            charset="utf8"
-    )
-    db = connection.cursor()
-    db.execute("SELECT * FROM states ORDER BY id ASC;")
-    query_rows = db.fetchall()
+            charset="utf8")
+    cur = connect.cursor()
+    cur.execute("SELECT * FROM states OREDER BY id ASC;")
+    rows = cur.fetchall()
 
-    for row in query_rows:
+    for row in rows:
         print(row)
 
-    db.close()
-    connection.close()
+    cur.close()
+    connect.close()
