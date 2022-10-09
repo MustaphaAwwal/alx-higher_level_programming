@@ -20,7 +20,7 @@ if __name__ == '__main__':
     cur = connect.cursor()
     cur.execute("SELECT * FROM states WHERE" +
                " CAST(name AS BINARY) LIKE" +
-               " CAST('{}' AS BINARY) ORDER BY id ASC;" \
+               " CAST('{}' AS BINARY) ORDER BY id ASC;"
 		.format(argv[4]))
     rows = cur.fetchall()
 
