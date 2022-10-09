@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Lists all states from from the database
+filter all states from from the database
+and serach
 """
 from sys import argv
 import MySQLdb
