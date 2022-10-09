@@ -1,6 +1,14 @@
 #!/usr/bin/python3
+"""
+Lists all states from from the database
+"""
 from sys import argv
 import MySQLdb
+
+"""
+Connection set up
+using MySQLdb
+"""
 if __name__ == '__main__':
     connect = MySQLdb.connect(
             host=localhost,
