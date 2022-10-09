@@ -18,11 +18,11 @@ if __name__ == '__main__':
             db=argv[3],
             charset="utf8")
     cur = connect.cursor()
-    cur.execute("SELECT * \ 
-				FROM states WHERE \
-                CAST(name AS BINARY) LIKE \ 
-                CAST('{}' AS BINARY) \
-                ORDER BY id ASC;".format(argv[4]))
+    cur.execute("SELECT * " + 
+		"FROM states WHERE " +
+                "CAST(name AS BINARY) LIKE " + 
+                "CAST('{}' AS BINARY) " +
+                "ORDER BY id ASC;".format(argv[4]))
     rows = cur.fetchall()
 
     for row in rows:
