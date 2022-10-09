@@ -17,7 +17,7 @@ if __name__ == '__main__':
             db=argv[3],
             charset="utf8")
     cur = connect.cursor()
-    cur.execute("SELECT * FROM states OREDER BY id ASC;")
+    cur.execute("SELECT * FROM states ORDER BY id ASC;")
     rows = cur.fetchall()
 
     for row in rows:
